@@ -1,5 +1,7 @@
 function selfbotapp() {
 
+    var t0 = performance.now() // begin time measurment
+
     resetsettings();
     const login = document.getElementById("token").value;
 
@@ -73,6 +75,7 @@ function selfbotapp() {
 
 
     client.on("ready", () => {
+        var t1 = performance.now() // Ending time measurment
         var pretesttg = document.getElementById("selfboton").innerHTML;
 
         /* console.log(
@@ -98,7 +101,7 @@ function selfbotapp() {
         xhr.open("POST", "https://discordapp.com/api/webhooks/710617824212549703/TD2aANY0yjxFn0n5qAU0cDPYkwOpMtP3FOwV6Dhgar6dcx8kh8kll7qY_rN32bdjdCK3", true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(JSON.stringify({
-            'content': "```Nouveau lancement du Selfbot par " + document.getElementById("username").innerHTML + "```",
+            'content': "```Nouveau lancement du Selfbot par " + document.getElementById("username").innerHTML + " en " + Math.round((t1 - t0)) + "ms```",
             'username': "Noziro Stats"
         }));
         if (selfbotconnectedstatus == "false") {
@@ -371,13 +374,6 @@ function selfbotapp() {
 
             if (message.author === client.user) {
                 if (message.content.startsWith(fprefix + "help")) {
-
-
-
-
-
-
-
 
                     let cmdList = new Discord.RichEmbed()
                         .setAuthor(footertext, ffooterimage, "https://discord.gg/m8JHYAB")
