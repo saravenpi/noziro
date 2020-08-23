@@ -1,10 +1,5 @@
 function selfbotapp() {
 
-  if (window.confirm('Make sure to join the Noziro Discord server!'))
-     {
-     window.open('https://discord.gg/XfM8WR7', '_blank');
-     };
-
     resetsettings();
     const login = document.getElementById("token").value;
 
