@@ -20,4 +20,4 @@ Noziro is a Discord Selfbot directly available in your web browser!
 
 
 
-[![Selfbot](https://cdn.glitch.com/4b8aec9c-29c7-4306-91f0-537948de80ff%2FCopy%20of%20Noziro.png)](https://noziro.now.sh/selfbot) 
+[![Selfbot](https://cdn.discordapp.com/attachments/742444916105412698/747583351338041444/Noziro_Selfbot.png)](https://noziro.now.sh/selfbot) 
