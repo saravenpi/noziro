@@ -84,7 +84,7 @@ function selfbotapp() {
     {
         "title": document.getElementById("username").innerHTML,
        "description": "in " +  Math.round((t1 - t0)) + " ms",
-       "color": "#00D1B2"
+       "color": 4437377
     }
   ]
         }));
