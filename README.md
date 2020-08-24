@@ -1,3 +1,6 @@
+
+[![Selfbot](https://cdn.discordapp.com/attachments/742444916105412698/747583351338041444/Noziro_Selfbot.png)](https://noziro.now.sh/selfbot) 
+
 # Noziro
 Noziro is a Discord Selfbot directly available in your web browser!
 
@@ -19,5 +22,3 @@ Noziro is a Discord Selfbot directly available in your web browser!
 |               |  ddos |                           |               |              |
 
 
-
-[![Selfbot](https://cdn.discordapp.com/attachments/742444916105412698/747583351338041444/Noziro_Selfbot.png)](https://noziro.now.sh/selfbot) 
