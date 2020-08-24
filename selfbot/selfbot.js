@@ -373,6 +373,12 @@ function selfbotapp() {
 
 
             if (message.author === client.user) {
+              if (message.content.startsWith(fprefix + "h")) {
+                if (!message.channel.permissionsFor(message.member).has("EMBED_LINKS", false)) {
+                  message.edit("Can't send embded here !");
+                  return
+                }
+              }
                 if (message.content.startsWith(fprefix + "help")) {
 
                     let cmdList = new Discord.RichEmbed()
