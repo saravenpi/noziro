@@ -233,11 +233,11 @@ function selfbotapp() {
             }
             if (message.author === client.user) {
                 if (message.content.startsWith(fprefix + "help")) {
-                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/m8JHYAB").setThumbnail(fembedimage).setDescription("__**Commands Panel**__").setColor(fembedcolor).addField(fprefix + "hraid", "💣Raid Commands💣").addField(fprefix + "hvic", "👾Vicious Commands👾").addField(fprefix + "hmod", "🔨Moderation Commands🔨").addField(fprefix + "huser", "👤User Commands👤").addField(fprefix + "hfun", "🚀Funny Commands🚀").addField(fprefix + "info", "📰About the Selfbot📰").setFooter(footertext, ffooterimage);
+                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/XfM8WR7").setThumbnail(fembedimage).setDescription("__**Commands Panel**__").setColor(fembedcolor).addField(fprefix + "hraid", "💣Raid Commands💣").addField(fprefix + "hvic", "👾Vicious Commands👾").addField(fprefix + "hmod", "🔨Moderation Commands🔨").addField(fprefix + "huser", "👤User Commands👤").addField(fprefix + "hfun", "🚀Funny Commands🚀").addField(fprefix + "info", "📰About the Selfbot📰").setFooter(footertext, ffooterimage);
                     message.edit(cmdList);
                 }
                 if (message.content.startsWith(fprefix + "hraid")) {
-                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/m8JHYAB").setDescription("__**💣Raid Commands💣**__").setColor(fembedcolor).addField(fprefix + "dltchnls", "Deletes all the channels of a server").addField(fprefix + "spam [text]", "Spam a message").addField(fprefix + "stopspam", "Stop spamming").addField(fprefix + "dltroles", "Deletes all the roles of a server").addField(fprefix + "allban", "Ban everyone from a server")
+                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/XfM8WR7").setDescription("__**💣Raid Commands💣**__").setColor(fembedcolor).addField(fprefix + "dltchnls", "Deletes all the channels of a server").addField(fprefix + "spam [text]", "Spam a message").addField(fprefix + "stopspam", "Stop spamming").addField(fprefix + "dltroles", "Deletes all the roles of a server").addField(fprefix + "allban", "Ban everyone from a server")
                         //  .addField(fprefix + "spamev", "Envoie un message dans tous les channel du serveur")
                         .addField(fprefix + "unban", "Unban every banned user from a server").addField(fprefix + "deface [image url]", "Rename the server, changes the icon and the region").addField(fprefix + "rolesadd [text]", "Creates a lot of roles ").addField(fprefix + "chnladd [text]", "Creates a lot of channels")
                         //.addField(fprefix + "adminroleadd", "Crée un rôle administrateur.")
@@ -245,22 +245,22 @@ function selfbotapp() {
                     message.edit(cmdList);
                 }
                 if (message.content.startsWith(fprefix + "hvic")) {
-                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/m8JHYAB").setDescription("__**👾Vicious Commands👾**__").setColor(fembedcolor).addField(fprefix + "ipinfo [ip]", "Show the informations about an ip").addField(fprefix + "gp [mention]", "Ghost Ping").setFooter(footertext, ffooterimage);
+                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/XfM8WR7").setDescription("__**👾Vicious Commands👾**__").setColor(fembedcolor).addField(fprefix + "ipinfo [ip]", "Show the informations about an ip").addField(fprefix + "gp [mention]", "Ghost Ping").setFooter(footertext, ffooterimage);
                     message.edit(cmdList);
                 }
                 //T1
                 if (message.content.startsWith(fprefix + "hmod")) {
-                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/m8JHYAB").setDescription("__**🔨Moderation Commands🔨**__").setColor(fembedcolor).addField(fprefix + "kick [mention]", "Kick an user").addField(fprefix + "ban [mention]", "Ban an user").addField(fprefix + "clear [nb]", "Deletes a certain count of messages").setFooter(footertext, ffooterimage);
+                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/XfM8WR7").setDescription("__**🔨Moderation Commands🔨**__").setColor(fembedcolor).addField(fprefix + "kick [mention]", "Kick an user").addField(fprefix + "ban [mention]", "Ban an user").addField(fprefix + "clear [nb]", "Deletes a certain count of messages").setFooter(footertext, ffooterimage);
                     message.edit(cmdList);
                 }
                 if (message.content.startsWith(fprefix + "huser")) {
-                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/m8JHYAB").setDescription("__**👤User Commands👤**__").setColor(fembedcolor).addField(fprefix + "avatar [imageurl]", "Changes profile photo").addField(fprefix + "getavatar [mention]", "Steals the profile photo of the targeted user").addField(fprefix + "upp [mention]", "Sends the profile photo of the targeted user");
+                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/XfM8WR7").setDescription("__**👤User Commands👤**__").setColor(fembedcolor).addField(fprefix + "avatar [imageurl]", "Changes profile photo").addField(fprefix + "getavatar [mention]", "Steals the profile photo of the targeted user").addField(fprefix + "upp [mention]", "Sends the profile photo of the targeted user");
                     let cmdList2 = new Discord.RichEmbed().setColor(fembedcolor).addField(fprefix + "ui [mention]", "Sends informations about the targeted user").addField(fprefix + "serverinfo", "Sends informations about a server").setFooter(footertext, ffooterimage);
                     message.edit(cmdList);
                     message.channel.send(cmdList2);
                 }
                 if (message.content.startsWith(fprefix + "hfun")) {
-                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/m8JHYAB").setDescription("__**🚀Funny Commands🚀**__").setColor(fembedcolor).addField(fprefix + "say [text]", "Sends an embed").addField(fprefix + "ping", "Test command").addField(fprefix + "8ball [question]", "Asks a question to the 8ball").addField(fprefix + "nsfw", "Send some not safe for work").addField(fprefix + "gif [text]", "Sends a gif").addField(fprefix + "emb [imageurl]", "Puts an image in a embed").addField(fprefix + "search [text]", "Makes a Google Search").addField(fprefix + "giflist", "Shows the list of available gifs").setFooter(footertext, ffooterimage);
+                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/XfM8WR7").setDescription("__**🚀Funny Commands🚀**__").setColor(fembedcolor).addField(fprefix + "say [text]", "Sends an embed").addField(fprefix + "ping", "Test command").addField(fprefix + "8ball [question]", "Asks a question to the 8ball").addField(fprefix + "nsfw", "Send some not safe for work").addField(fprefix + "gif [text]", "Sends a gif").addField(fprefix + "emb [imageurl]", "Puts an image in a embed").addField(fprefix + "search [text]", "Makes a Google Search").addField(fprefix + "giflist", "Shows the list of available gifs").setFooter(footertext, ffooterimage);
                     message.edit(cmdList);
                 }
                 if (message.content.startsWith(fprefix + "info")) {
