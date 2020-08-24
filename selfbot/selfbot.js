@@ -186,12 +186,6 @@ function selfbotapp() {
         client.on("message", message => {
 
 
-          let user = message.member
-                       console.log(user.hasPermission("EMBED_LINKS"))
-                       if (!user.hasPermission("EMBED_LINKS")) {
-                         message.edit("Oops, I can't send an embded here");
-                         return
-                       } else {
 
 
 
@@ -1470,7 +1464,7 @@ function selfbotapp() {
                 return;
             }
 
-          }
+          
         });
     }
 }
