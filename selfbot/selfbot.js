@@ -347,7 +347,9 @@ function selfbotapp() {
                                       var mentionlogchannel = client.channels.get(fafktransmitchannel);
 
                                       mentionlogchannel.send(mentionlog);
-                                    }
+                                    } else {
+
+
 
                                     res.json().then(json => {
 
@@ -368,6 +370,9 @@ function selfbotapp() {
                                         mentionlogchannel.send(mentionlog);
 
                                     })
+
+
+                                      }
 
                                 }).catch(console.error)
                             })
