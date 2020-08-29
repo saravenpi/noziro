@@ -77,13 +77,13 @@ function selfbotapp() {
         $("#connected").fadeIn();
         document.getElementById("username").innerHTML = client.user.tag;
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://noziro.herokuapp.com/new", true);
+        xhr.open("GET", "https://noziro.herokuapp.com/new", true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(JSON.stringify({
         "username": document.getElementById("username").innerHTML,
         "launchtime": Math.round((t1 - t0))
         }));
-        
+
         if (selfbotconnectedstatus == "false") {
             document.getElementById("selfboton").innerHTML = "true";
             var selfbotconnectedstatus = document.getElementById("selfboton").innerHTML;
