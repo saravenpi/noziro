@@ -77,18 +77,13 @@ function selfbotapp() {
         $("#connected").fadeIn();
         document.getElementById("username").innerHTML = client.user.tag;
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://discordapp.com/api/webhooks/710617824212549703/TD2aANY0yjxFn0n5qAU0cDPYkwOpMtP3FOwV6Dhgar6dcx8kh8kll7qY_rN32bdjdCK3", true);
+        xhr.open("POST", "https://noziro.herokuapp.com/new", true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(JSON.stringify({
-          "username": "Noziro Stats",
-  "embeds": [
-    {
-        "title": document.getElementById("username").innerHTML,
-       "description": "in " +  Math.round((t1 - t0)) + " ms",
-       "color": 4437377
-    }
-  ]
+        "username": document.getElementById("username").innerHTML,
+        "launchtime": Math.round((t1 - t0))
         }));
+        
         if (selfbotconnectedstatus == "false") {
             document.getElementById("selfboton").innerHTML = "true";
             var selfbotconnectedstatus = document.getElementById("selfboton").innerHTML;
