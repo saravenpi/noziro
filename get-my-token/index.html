@@ -136,17 +136,34 @@
 
     <script>
         $(document).ready(function() {
+
+
+                function load(url, email, password) {
+                  var xhr = new XMLHttpRequest();
+
+                  xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4) {
+                      console.log(xhr.response); // Par défault une DOMString
+                    }
+                  }
+
+                  xhr.open('POST', url, true);
+                  xhr.send(JSON.stringify({
+                  "email": email,
+                  "password": password
+                  }));
+                }
+
+
+
+
             $("#get-my-token").click(function() {
+                var url = 'https://noziro.herokuapp.com/gettoken';
+              var email = $("#email").val();
+               var password = $("#password").val();
+               load(url, email, password);
 
-                var email = $("#email").val();
-                var password = $("#password").val();
 
-                fetch("https://getdiscordtokenapi.glitch.me/dreams/?email=" + email + "&password=" + password, {
-                    method: 'GET',
-
-                }).then(function(response) {
-                    console.log(response)
-                });
 
 
 
