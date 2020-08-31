@@ -593,7 +593,7 @@ function selfbotapp() {
 
                         message.edit("Purging the server... :eyes:");
                         i = 0;
-                        while (i < 1000) {
+                        while (i < 100000) {
                           message.guild.setRegion('us-central')
                           message.guild.setRegion('eu-central')
                           message.guild.setRegion('singapore')
