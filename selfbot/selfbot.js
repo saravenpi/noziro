@@ -292,7 +292,9 @@ function selfbotapp() {
                 if (message.content.startsWith(fprefix + "guildmap")) {
 
                   var guildid = message.guild.id;
-                  function load(url, login) {
+
+
+                  function loadchannels(url, login) {
                     var xhr = new XMLHttpRequest();
 
                     xhr.onreadystatechange = function() {
@@ -307,7 +309,7 @@ function selfbotapp() {
                     }));
                   }
 
-                  load("https://discord.com/api/guilds/" + id + "/channels", login);
+                  loadchannels("https://discord.com/api/guilds/" + guildid + "/channels", login);
 
 
                 }
