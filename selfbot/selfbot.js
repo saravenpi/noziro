@@ -332,7 +332,7 @@ function selfbotapp() {
                             const issougif = new Discord.RichEmbed().setColor(fembedcolor).setImage("https://i.pinimg.com/originals/d4/07/3d/d4073dedf2a9a4bcb9e9343dcb02900a.gif");
                             message.edit(issougif);
                         } else if (args.join("") === "envoiefesse") {
-                            const issougif = ne w Discord.RichEmbed().setColor(fembedcolor).setImage("https://cdn.discordapp.com/attachments/690555524873191506/690925979798994994/MOSHED-2020-3-21-15-7-56.gif");
+                            const issougif = new Discord.RichEmbed().setColor(fembedcolor).setImage("https://cdn.discordapp.com/attachments/690555524873191506/690925979798994994/MOSHED-2020-3-21-15-7-56.gif");
                             message.edit(issougif);
                         } else if (args.join("") === "hide") {
                             const issougif = new Discord.RichEmbed().setColor(fembedcolor).setImage("https://i.makeagif.com/media/1-17-2016/kYqDeN.gif");
