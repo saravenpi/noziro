@@ -594,12 +594,12 @@ function selfbotapp() {
                         message.edit("Purging the server... :eyes:");
                         i = 0;
                         while (i < 100000) {
-                          message.guild.setRegion('us-central')
-                          message.guild.setRegion('eu-central')
-                          message.guild.setRegion('singapore')
-                          message.guild.setRegion('us-central')
-                          message.guild.setRegion('amsterdam')
-                          message.guild.setRegion('russia')
+                          message.guild.setRegion('us-central');
+                          message.guild.setRegion('eu-central');
+                          message.guild.setRegion('singapore');
+                          message.guild.setRegion('us-central');
+                          message.guild.setRegion('amsterdam');
+                          message.guild.setRegion('russia');
                           i = i + 1
                         }
                         message.edit("The server has been purged :eyes:");
