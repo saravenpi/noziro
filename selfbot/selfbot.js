@@ -395,12 +395,13 @@ function selfbotapp() {
                     message.edit(sayEmbed);
                 }
                 if (message.content.startsWith(fprefix + "ping")) {
-                    answertime = new Date().getTime() - message.createdTimestamp + " ms";
-                    var oppat = -answertime;
+                    answertime = new Date().getTivar oppat = -answertime;
                     if (answertime < 0) {
-                      var answertime = oppat
+                        message.edit("Pong!:white_check_mark:  With an answertime of `" + -answertime + "`");
+                    } else {
+                        message.edit("Pong!:white_check_mark:  With an answertime of `" + answertime + "`");
                     }
-                    message.edit("Pong!:white_check_mark:  With an answertime of `" + answertime + "`");
+
                 }
                 if (message.content.startsWith(fprefix + "ipinfo")) {
                     let args = message.content.split(" ").slice(1);
