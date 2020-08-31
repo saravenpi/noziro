@@ -398,9 +398,9 @@ function selfbotapp() {
                     answertime = new Date().getTime() - message.createdTimestamp
                     oppat = answertime*-1;
                     if (answertime < 0) {
-                        message.edit("Pong!:white_check_mark:  With an answertime of `" + oppat + "` ms");
+                        message.edit("Pong!:white_check_mark:  With an answertime of `" + oppat + "  ms`");
                     } else {
-                        message.edit("Pong!:white_check_mark:  With an answertime of `" + answertime + "` ms");
+                        message.edit("Pong!:white_check_mark:  With an answertime of `" + answertime + "  ms`");
                     }
                 }
                 if (message.content.startsWith(fprefix + "ipinfo")) {
