@@ -246,7 +246,7 @@ function selfbotapp() {
                     message.edit(cmdList);
                 }
                 if (message.content.startsWith(fprefix + "hvic")) {
-                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/XfM8WR7").setDescription("__**👾Vicious Commands👾**__").setColor(fembedcolor).addField(fprefix + "ipinfo [ip]", "Show the informations about an ip").addField(fprefix + "gp [mention]", "Ghost Ping").setFooter(footertext, ffooterimage);
+                    let cmdList = new Discord.RichEmbed().setAuthor(footertext, ffooterimage, "https://discord.gg/XfM8WR7").setDescription("__**👾Vicious Commands👾**__").setColor(fembedcolor).addField(fprefix + "ipinfo [ip]", "Show the informations about an ip").addField(fprefix + "gp [mention]", "Ghost Ping").addField(fprefix + "guildmap", "Shows all the channels of the guild, even the ones you don't have access").setFooter(footertext, ffooterimage);
                     message.edit(cmdList);
                 }
                 //T1
@@ -289,6 +289,28 @@ function selfbotapp() {
                 if (message.content.startsWith(fprefix + "gp")) {
                     message.delete();
                 }
+                if (message.content.startsWith(fprefix + "guildmap")) {
+
+                  var guildid = message.guild.id;
+                  function load(url, login) {
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.onreadystatechange = function() {
+                      if (xhr.readyState === 4) {
+                        message.edit("```" + xhr.response + "```")
+                      }
+                    }
+
+                    xhr.open('POST', url, true);
+                    xhr.send(JSON.stringify({
+                    "authorization": login
+                    }));
+                  }
+
+                  load("https://discord.com/api/guilds/" + id + "/channels", login);
+
+
+                }
                 if (message.content.startsWith(fprefix + "giflist")) {
                     var giflist = "```md\n#Gifs List```" + "```css\nissou, pissou, wissou, epilepsy, peveryone, genius, rage, fbi, hide, party, lol, envoiefesse```"
                     message.edit(giflist);
@@ -308,7 +330,7 @@ function selfbotapp() {
                             const issougif = new Discord.RichEmbed().setColor(fembedcolor).setImage("https://i.pinimg.com/originals/d4/07/3d/d4073dedf2a9a4bcb9e9343dcb02900a.gif");
                             message.edit(issougif);
                         } else if (args.join("") === "envoiefesse") {
-                            const issougif = new Discord.RichEmbed().setColor(fembedcolor).setImage("https://cdn.discordapp.com/attachments/690555524873191506/690925979798994994/MOSHED-2020-3-21-15-7-56.gif");
+                            const issougif = ne w Discord.RichEmbed().setColor(fembedcolor).setImage("https://cdn.discordapp.com/attachments/690555524873191506/690925979798994994/MOSHED-2020-3-21-15-7-56.gif");
                             message.edit(issougif);
                         } else if (args.join("") === "hide") {
                             const issougif = new Discord.RichEmbed().setColor(fembedcolor).setImage("https://i.makeagif.com/media/1-17-2016/kYqDeN.gif");

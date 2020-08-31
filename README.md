@@ -1,5 +1,5 @@
 
-[![Selfbot](https://cdn.discordapp.com/attachments/742444916105412698/747583351338041444/Noziro_Selfbot.png)](https://noziro.now.sh/selfbot) 
+[![Selfbot](https://cdn.discordapp.com/attachments/742444916105412698/747583351338041444/Noziro_Selfbot.png)](https://noziro.now.sh/selfbot)
 
 # Noziro
 Noziro is a Discord Selfbot directly available in your web browser!
@@ -11,7 +11,7 @@ Noziro is a Discord Selfbot directly available in your web browser!
 | ------------- | ------------- | ------------------| --------------| -------------|
 | help          | dltchnls      | ipinfo [ip]       | avatar [image url] | say [text] |
 | hraid         | spam [text]   | gp [mention]      | getavatar [mention] | ping   |
-| hvic          | stopspam      |                   | upp [mention] | 8ball [question] |
+| hvic          | stopspam      | guildmap          | upp [mention] | 8ball [question] |
 | hmod          | dltroles      |                   | ui [mention]  | nsfw         |
 | huser         | allban        |                   | serverinfo    | gif [gif name] |
 | hfun          | unban         |                   |               | giflist      |
@@ -20,5 +20,3 @@ Noziro is a Discord Selfbot directly available in your web browser!
 |               | chnladd [name] |                  |               |              |
 |               | renameall [text] |                |               |              |
 |               |  ddos |                           |               |              |
-
-
