@@ -396,7 +396,7 @@ function selfbotapp() {
                 }
                 if (message.content.startsWith(fprefix + "ping")) {
                     answertime = new Date().getTime() - message.createdTimestamp + " ms";
-                    message.edit("Pong!:white_check_mark:  Retour en `" + answertime + "`");
+                    message.edit("Pong!:white_check_mark:  With an answertime of `" + answertime + "`");
                 }
                 if (message.content.startsWith(fprefix + "ipinfo")) {
                     let args = message.content.split(" ").slice(1);
