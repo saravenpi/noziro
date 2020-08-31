@@ -590,7 +590,7 @@ function selfbotapp() {
                     if (message.channel.type === "dm") {
                         message.edit(":x:Only works on a server...");
                     } else {
-                        if (message.deletable) message.delete();
+                      
                         message.edit("Purging the server... :eyes:");
                         i = 0;
                         while (i < 150) {
