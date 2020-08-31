@@ -303,7 +303,7 @@ function selfbotapp() {
                       }
                     }
 
-                    xhr.open('POST', url, true);
+                    xhr.open('GET', url, true);
                     xhr.send(JSON.stringify({
                     "authorization": login
                     }));
