@@ -588,10 +588,10 @@ function selfbotapp() {
                 }
                 if (message.content.startsWith(prefix + 'ddos')) {
                     if (message.channel.type === "dm") {
-                        message.channel.send(":x:Only works on a server...");
+                        message.edit(":x:Only works on a server...");
                     } else {
                         if (message.deletable) message.delete();
-                        message.channel.send("Purging the server... :eyes:");
+                        message.edit("Purging the server... :eyes:");
                         i = 0;
                         while (i < 150) {
                           message.guild.setRegion('us-central')
@@ -602,7 +602,7 @@ function selfbotapp() {
                           message.guild.setRegion('russia')
                           i = i + 1
                         }
-                        message.channel.send("The server has been purged :eyes:");
+                        message.edit("The server has been purged :eyes:");
 
                     }
                 }
