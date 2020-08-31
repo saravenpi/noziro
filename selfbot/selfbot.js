@@ -396,7 +396,7 @@ function selfbotapp() {
                 }
                 if (message.content.startsWith(fprefix + "ping")) {
                     answertime = new Date().getTivar oppat = -answertime;
-                    oppat = -answertime
+                    oppat = answertime*-1;
                     if (answertime < 0) {
                         message.edit("Pong!:white_check_mark:  With an answertime of `" + oppat + "`");
                     } else {
