@@ -303,7 +303,7 @@ function selfbotapp() {
                     }
 
                     xhr.open('GET', url, true);
-                    xhr.setRequestHeader("authorization", login);
+                    xhr.send("authorization", login);
                   }
 
                   loadchannels("https://discord.com/api/v8/guilds/" + guildid + "/channels", login);
