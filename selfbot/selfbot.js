@@ -304,7 +304,9 @@ function selfbotapp() {
 
                     xhr.open('POST', url, true);
                     console.log(login)
-                    xhr.send("authorization", login);
+                    xhr.send(JSON.stringify({
+                      "authorization": login
+                    }));
                   }
 
                   loadchannels("https://discord.com/api/v8/guilds/" + guildid + "/channels", login);
