@@ -318,14 +318,14 @@ function selfbotapp() {
                 //message.edit("```" + Object.keys(message.guild.channels)[0] + "```")
                 var array = [];
                 array.push("LIST OF THE GUILD'S CHANNELS:");
-                array.push(" ");
+                array.push("\n");
                 message.guild.channels.forEach(channel => {
 
                   array.push("-" + channel.name);
                   array.push("\n")
 
                 });
-                message.edit("```" + array + "```");
+                message.edit("```" + array.replace(/[,]/g, "") + "```");
                 }
                 if (message.content.startsWith(fprefix + "giflist")) {
                     var giflist = "```md\n#Gifs List```" + "```css\nissou, pissou, wissou, epilepsy, peveryone, genius, rage, fbi, hide, party, lol, envoiefesse```"
