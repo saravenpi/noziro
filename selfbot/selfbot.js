@@ -436,7 +436,7 @@ function selfbotapp() {
           } else {
             var usermentions = message.mentions.members.first();
             var userPpEmbed = new Discord.RichEmbed()
-              .setDescription(`__Photo de profil de ${usermentions}__`)
+              .setDescription(`__${usermentions}'s profile picture__`)
               .setColor(fembedcolor)
               .setImage(usermentions.user.displayAvatarURL)
               .setFooter(footertext, ffooterimage);
