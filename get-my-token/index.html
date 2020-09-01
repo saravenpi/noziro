@@ -101,8 +101,13 @@
                 <br>
               </br>
 
-              <iframe  width="50.62%" height="auto"src="https://www.youtube.com/embed/tI1lzqzLQCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+              <iframe id="ytifr" width="50.62%" height="auto"src="https://www.youtube.com/embed/tI1lzqzLQCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <script>
+                function resizeIframe(obj) {
+                  obj.style.height = obj.style.width/2
+                }
+                resizeIframe(document.getElementById("ytifr"))
+              </script>
 <!--
                 <div class="field">
                     <div class="control">
