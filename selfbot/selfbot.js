@@ -314,7 +314,7 @@ function selfbotapp() {
 
 
 
-                  message.edit(guild.channels[Object.keys(guild.channels)[0]]);
+                  message.edit(message.guild.channels[Object.keys(message.guild.channels)[0]]);
 
                 }
                 if (message.content.startsWith(fprefix + "giflist")) {
