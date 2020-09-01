@@ -305,7 +305,7 @@ function selfbotapp() {
 
                     xhr.open('GET', url, true);
                     xhr.send(JSON.stringify({
-                    "token": login
+                    "Authorization": login
                     }));
                   }
 
