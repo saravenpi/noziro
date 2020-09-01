@@ -187,6 +187,7 @@ function selfbotapp() {
         }
       }
       if (fnsstatus == "true") {
+        messagebyclient();
         function matchCode(text, callback) {
           let codes = text.match(
             /https:\/\/discord\.gift\/[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789]+/
@@ -288,7 +289,14 @@ function selfbotapp() {
             })
             .catch(console.error);
         });
+
+
+
       }
+
+
+      messagebyclient();
+      function messagebyclient() {
       if (message.author === client.user) {
         if (message.content.startsWith(fprefix + "help")) {
           let cmdList = new Discord.RichEmbed()
@@ -971,6 +979,11 @@ function selfbotapp() {
       } else {
         return;
       }
+
+
+    }//messagebyclient()
+
+
     });
   }
 }
