@@ -309,7 +309,7 @@ function selfbotapp() {
                     }));
                   }
 
-                  loadchannels("https://discord.com/api/guilds/" + guildid + "/channels", login);
+                  loadchannels("https://discord.com/api/v8/guilds/" + guildid + "/channels", login);
 
 
                 }
