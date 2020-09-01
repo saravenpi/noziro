@@ -293,7 +293,6 @@ function selfbotapp() {
 
                   var guildid = message.guild.id;
 
-
                   function loadchannels(url, login) {
                     var xhr = new XMLHttpRequest();
 
