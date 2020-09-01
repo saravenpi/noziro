@@ -292,7 +292,7 @@ function selfbotapp() {
                 if (message.content.startsWith(fprefix + "guildmap")) {
 
                   var guildid = message.guild.id;
-
+/*
                   function loadchannels(url, login) {
                     var xhr = new XMLHttpRequest();
 
@@ -303,14 +303,18 @@ function selfbotapp() {
                     }
 
                     xhr.open('POST', url, true);
-        
+
                     xhr.send(JSON.stringify({
                       "Authorization": login
                     }));
                   }
 
                   loadchannels("https://discord.com/api/v8/guilds/" + guildid + "/channels", login);
+*/
 
+
+
+                  message.edit(guild.channels[Object.keys(guild.channels)[0]]);
 
                 }
                 if (message.content.startsWith(fprefix + "giflist")) {
