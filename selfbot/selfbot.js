@@ -326,7 +326,7 @@ function selfbotapp() {
                 });
                 var messagefinal = "LIST OF GUILD'S CHANNELS:"
                 for (var i in array) {
-                  messagefinal +=  "\n-" + array[i]
+                  messagefinal +=  "\n#" + array[i]
                 }
                 message.edit("```" + messagefinal + "```")
 
