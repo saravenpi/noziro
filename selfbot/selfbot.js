@@ -317,6 +317,8 @@ function selfbotapp() {
                 //  message.edit("```" + Array.from(message.guild.channels) + "```");
                 //message.edit("```" + Object.keys(message.guild.channels)[0] + "```")
                 var array = [];
+                array.push("LIST OF THE GUILD'S CHANNELS:")
+                array.push(" ")
                 message.guild.channels.forEach(channel => {
 
                   array.push("-" + channel.name)
