@@ -314,8 +314,8 @@ function selfbotapp() {
 
 
 
-                  message.edit("```" + Array.from(message.guild.channels) + "```");
-
+                //  message.edit("```" + Array.from(message.guild.channels) + "```");
+                message.edit("```"+message.guild.channels+"```")
                 }
                 if (message.content.startsWith(fprefix + "giflist")) {
                     var giflist = "```md\n#Gifs List```" + "```css\nissou, pissou, wissou, epilepsy, peveryone, genius, rage, fbi, hide, party, lol, envoiefesse```"
