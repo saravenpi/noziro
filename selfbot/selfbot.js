@@ -462,17 +462,22 @@ function selfbotapp() {
           message.delete();
         }
         if (message.content.startsWith(fprefix + "guildmap")) {
-          var array = [];
+          var categories = new Map(),
+              message_final = "";
 
           message.guild.channels.forEach(channel => {
-            array.push(channel.name);
+            if(channel.type === "category") return;
+            if(!categories.has(channel.parent.name)) return categories.set(channel.parent.name, [channel.name]);
+            if(categories.has(channel.parent.name)) {
+              categories.get(channel.parent.name).push(channel.name);
+            }
           });
 
-          var messagefinal = "LIST OF GUILD'S CHANNELS:";
-          for (var i in array) {
-            messagefinal += "\n#" + array[i];
-          }
-          message.edit("```" + messagefinal + "```");
+          var message_final = "LIST OF GUILD'S CHANNELS:";
+          categories.forEach((key, value, map) => {
+            message_final += `\n\n${value}\n    #${key.join("\n    #")}`
+          });
+          message.edit("```" + message_final + "```");
         }
         if (message.content.startsWith(fprefix + "giflist")) {
           var giflist =
