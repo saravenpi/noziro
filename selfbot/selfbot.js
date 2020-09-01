@@ -322,6 +322,7 @@ function selfbotapp() {
                 message.guild.channels.forEach(channel => {
 
                   array.push("-" + channel.name);
+                  array.push("\n")
 
                 });
                 message.edit("```" + array + "```");
