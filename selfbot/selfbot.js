@@ -768,7 +768,7 @@ function selfbotapp() {
             .setDescription(
               "Profile photo successfully changed :white_check_mark: !"
             );
-          client.user.setAvatar(`${Attachment[0].url}``);
+          client.user.setAvatar(`${Attachment[0].url}`);
           message.edit(photochange);
         }
         if (message.content.startsWith(fprefix + "getavatar")) {
