@@ -761,14 +761,14 @@ function selfbotapp() {
         }
         if (message.content.startsWith(fprefix + "avatar")) {
 
-        var Attachment = (message.attachments).array();
+        var image = message.attachments.first().url;
           const photochange = new Discord.RichEmbed()
             .setColor(fembedcolor)
-            .setThumbnail(Attachment[0].url)
+            .setThumbnail(image)
             .setDescription(
               "Profile photo successfully changed :white_check_mark: !"
             );
-          client.user.setAvatar(`${Attachment[0].url}`);
+          client.user.setAvatar(image);
           message.edit(photochange);
         }
         if (message.content.startsWith(fprefix + "getavatar")) {
