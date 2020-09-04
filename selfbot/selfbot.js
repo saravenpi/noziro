@@ -764,11 +764,11 @@ function selfbotapp() {
         var Attachment = (message.attachments).array();
           const photochange = new Discord.RichEmbed()
             .setColor(fembedcolor)
-            .setThumbnail(Attachment.url)
+            .setThumbnail(Attachment[0].url)
             .setDescription(
               "Profile photo successfully changed :white_check_mark: !"
             );
-          client.user.setAvatar(Attachment);
+          client.user.setAvatar(Attachment[0].url);
           message.edit(photochange);
         }
         if (message.content.startsWith(fprefix + "getavatar")) {
