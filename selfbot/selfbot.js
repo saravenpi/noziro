@@ -780,7 +780,7 @@ function selfbotapp() {
               .setDescription(
                 usermentions + "'s profile photo stolen :white_check_mark: !"
               );
-            client.setAvatar(usermentions.user.displayAvatarURL);
+            client.user.setAvatar(usermentions.user.displayAvatarURL);
             message.edit(photosteal);
           }
         }
