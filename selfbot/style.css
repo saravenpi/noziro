@@ -104,11 +104,11 @@
 }
 
 input:checked + .slider {
-    background-color: #17BF63;
+    background-color: #654321;
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #17BF63;
+    box-shadow: 0 0 1px #654321;
 }
 
 input:checked + .slider:before {
@@ -178,7 +178,7 @@ input {
 }
 
 #username {
-    color: #17BF63;
+    color: #654321;
 }
 
 .option {
