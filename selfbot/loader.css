@@ -18,11 +18,11 @@
   margin: 0 -6px;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
-  border-bottom: 21.6px solid #00D1B2;
+  border-bottom: 21.6px solid #654321;
   -webkit-animation: blink 1s infinite;
   animation: blink 1s infinite;
-  -webkit-filter: drop-shadow(0 0 18px #00D1B2);
-  filter: drop-shadow(0 0 18px #00D1B2);
+  -webkit-filter: drop-shadow(0 0 18px #654321);
+  filter: drop-shadow(0 0 18px #654321);
 }
 .arrow.down {
   -webkit-transform: rotate(180deg);
