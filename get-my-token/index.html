@@ -98,110 +98,11 @@ iframe, object, embed {
 <div class="box">
             <iframe width="640" height="360" src="https://www.youtube.com/embed/tI1lzqzLQCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<!--
-                <div class="field">
-                    <div class="control">
 
-
-                        <div class="field" style="color: hsl(0, 0%, 65%)">
-                            <p class="control has-icons-left ">
-                                <input class="input" type="email" placeholder="Discord email" id="email">
-                                <span class="icon is-small is-left">
-                                    <i class="fas fa-envelope"></i>
-                                </span>
-
-                            </p>
-                        </div>
-                        <div class="field" style="color: hsl(0, 0%, 65%)">
-                            <p class="control has-icons-left">
-                                <input class="input" type="password" placeholder="Discord password" id="password">
-                                <span class="icon is-small is-left">
-                                    <i class="fas fa-lock"></i>
-                                </span>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <button class="button is-primary is-inverted is-outlined" id="get-my-token">
-                    Get my token
-                </button>
-            </div>
-        </div>
--->
     </section>
 
-    <script>
-        $(document).ready(function() {
 
 
-                function loadwithbody(url, email, password) {
-                  var xhr = new XMLHttpRequest();
-
-                  xhr.onreadystatechange = function() {
-                    if (xhr.readyState === 4) {
-                      console.log(xhr.response); // Par défault une DOMString
-                    }
-                  }
-
-                  xhr.open('POST', url, true);
-                  xhr.send(JSON.stringify({
-                  "email": email,
-                  "password": password
-                  }));
-                }
-
-
-
-                function loadwithquery(url, email, password) {
-                  var xhr = new XMLHttpRequest();
-
-                  xhr.onreadystatechange = function() {
-                    if (xhr.readyState === 4) {
-                      console.log(xhr.response); // Par défault une DOMString
-                    }
-                  }
-
-                  xhr.open('POST', url, true);
-                  xhr.send("")
-                }
-
-
-
-
-/*
-            $("#get-my-token").click(function() {
-                var url = 'https://noziro.herokuapp.com/gettoken';
-              var email = $("#email").val();
-               var password = $("#password").val();
-               loadwithbody(url, email, password);
-
-
-
-
-
-            })*/
-
-
-
-
-
-
-            $("#get-my-token").click(function() {
-              console.log("button clicked")
-
-            var email = $("#email").val();
-             var password = $("#password").val();
-
-             var url = 'https://noziro.herokuapp.com/gettokenwithquery/?email=' + email + "&password=" + password;
-             loadwithquery(url, email, password);
-
-
-            })
-        });
-
-    </script>
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
