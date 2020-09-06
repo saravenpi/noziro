@@ -10820,12 +10820,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .hero.is-primary.is-bold {
-  background-image: linear-gradient(141deg, #45270a 0%, #654321 71%, #de7a16 100%);
+  background-image: linear-gradient(141deg, #45270a 0%, #654321 71%, #9e550b 100%);
 }
 
 @media screen and (max-width: 768px) {
   .hero.is-primary.is-bold .navbar-menu {
-    background-image: linear-gradient(141deg, #45270a 0%, #654321 71%, #de7a16 100%);
+    background-image: linear-gradient(141deg, #45270a 0%, #654321 71%, #9e550b 100%);
   }
 }
 
