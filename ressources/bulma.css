@@ -979,7 +979,7 @@ fieldset[disabled] .button.is-dark.is-inverted.is-outlined {
 }
 
 .button.is-primary:hover, .button.is-primary.is-hovered {
-  background-color: #00c4a7;
+  background-color: #916539;
   border-color: transparent;
   color: #fff;
 }
@@ -3835,7 +3835,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .file.is-primary:hover .file-cta, .file.is-primary.is-hovered .file-cta {
-  background-color: #00c4a7;
+  background-color: #916539;
   border-color: transparent;
   color: #fff;
 }
