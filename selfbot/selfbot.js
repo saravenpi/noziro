@@ -812,6 +812,33 @@ function selfbotapp() {
           });
         }
         if (message.content.startsWith(fprefix + "clear")) {
+          if (message.guild === null) {
+            let args = message.content.split(" ").slice(1);
+            let messagecount = parseInt(args[0]);
+            if (args) {
+              if (messagecount === parseInt(messagecount, 10)) {
+                var deletedMessages = -1;
+                message.channel
+                  .fetchMessages({
+                    limit: Math.min(messagecount + 1, 100, 200)
+                  })
+                  .then(messages => {
+                    messages.forEach(m => {
+                      m.delete();
+                      deletedMessages++;
+                    });
+                  })
+                  .then(() => {
+                    if (deletedMessages === -1) deletedMessages = 0;
+                  });
+              } else {
+                message.edit("Incorrect number to delete");
+              }
+            } else {
+              message.edit("Please give a number of messages to delete");
+            }
+          } else {
+
           if (message.member.hasPermission("MANAGE_MESSAGES")) {
             let args = message.content.split(" ").slice(1);
             let messagecount = parseInt(args[0]);
@@ -840,6 +867,9 @@ function selfbotapp() {
           } else {
             message.edit("You don't have permissions for that");
           }
+
+
+        }
         }
         if (message.content.startsWith(fprefix + "search")) {
           let args = message.content.split(" ");
