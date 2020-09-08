@@ -679,7 +679,7 @@ function selfbotapp() {
               .addField("__ID:__", message.guild.id, true)
               .addField(
                 "__Owner:__",
-                `${message.guild.member(guild.owner.user.username)}#${message.guild.member(guild.owner)}`,
+                `${message.guild.member(guild.owner.tag)}#${message.guild.member(guild.owner)}`,
                 true
               )
               .addField("__Region:__", region[message.guild.region], true)
