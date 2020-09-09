@@ -671,7 +671,7 @@ function selfbotapp() {
               russia: ":flag_ru: Russia",
               southafrica: ":flag_za:  South Africa"
             };
-          console.log(message.guild.owner);
+          console.log(message.guild.cache.owner);
 
             const embed = new Discord.RichEmbed()
               .setColor(fembedcolor)
