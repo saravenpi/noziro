@@ -9,11 +9,11 @@ Noziro is a Discord Selfbot directly available in your web browser!
 ## Commands
 | Help commands | Raid commands | Vicious commmands | User commands | Fun commands |
 | ------------- | ------------- | ------------------| --------------| -------------|
-| help          | dltchnls      | ipinfo [ip]       | avatar [image url] | say [text] |
-| hraid         | spam [text]   | gp [mention]      | getavatar [mention] | ping   |
+| help          | dltchnls      | ipinfo [ip]       | serverinfo    | say [text]   |
+| hraid         | spam [text]   | gp [mention]      | ui [mention]  | ping         |
 | hvic          | stopspam      | guildmap          | upp [mention] | 8ball [question] |
-| hmod          | dltroles      |                   | ui [mention]  | nsfw         |
-| huser         | allban        |                   | serverinfo    | gif [gif name] |
+| hmod          | dltroles      |                   |               | nsfw         |
+| huser         | allban        |                   |               | gif [gif name] |
 | hfun          | unban         |                   |               | giflist      |
 | info          | deface [image url] |              |               | search [text] |
 |               | rolesadd [name] |                 |               | emb [image url] |

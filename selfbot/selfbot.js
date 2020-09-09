@@ -380,11 +380,11 @@ function selfbotapp() {
             .setAuthor(footertext, ffooterimage, "https://discord.gg/XfM8WR7")
             .setDescription("__**👤User Commands👤**__")
             .setColor(fembedcolor)
-            .addField(fprefix + "avatar [imageurl]", "Changes profile photo")
+          /*  .addField(fprefix + "avatar [imageurl]", "Changes profile photo")
             .addField(
               fprefix + "getavatar [mention]",
               "Steals the profile photo of the targeted user"
-            )
+            )*/
             .addField(
               fprefix + "upp [mention]",
               "Sends the profile photo of the targeted user"
@@ -760,7 +760,7 @@ function selfbotapp() {
               ")```"
           );
         }
-        if (message.content.startsWith(fprefix + "avatar")) {
+        /*if (message.content.startsWith(fprefix + "avatar")) {
 
         var image = message.attachments.first().url;
           const photochange = new Discord.RichEmbed()
@@ -786,7 +786,7 @@ function selfbotapp() {
             client.user.setAvatar(usermentions.user.displayAvatarURL);
             message.edit(photosteal);
           }
-        }
+        }*/
         if (message.content.startsWith(fprefix + "emb")) {
           let sayEmbed = new Discord.RichEmbed().setImage(`${args.join(" ")}`);
           //  .setColor("")
