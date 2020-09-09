@@ -671,7 +671,7 @@ function selfbotapp() {
               russia: ":flag_ru: Russia",
               southafrica: ":flag_za:  South Africa"
             };
-            var owner = message.guild.owner.user;
+          console.log(message.guild.owner);
 
             const embed = new Discord.RichEmbed()
               .setColor(fembedcolor)
@@ -680,7 +680,7 @@ function selfbotapp() {
               .addField("__ID:__", message.guild.id, true)
               .addField(
                 "__Owner:__",
-                `${message.guild.member(guild.owner) ? guild.owner.toString() : guild.owner.user.tag}`,
+                `${message.guild.owner`,
                 true
               )
               .addField("__Region:__", region[message.guild.region], true)
