@@ -767,7 +767,7 @@ fieldset[disabled] .button.is-black.is-inverted.is-outlined {
 }
 
 .button.is-light:hover, .button.is-light.is-hovered {
-  background-color: #eeeeee;
+  background-color: #fff0b5;
   border-color: transparent;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -3787,7 +3787,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .file.is-light:hover .file-cta, .file.is-light.is-hovered .file-cta {
-  background-color: #eeeeee;
+  background-color: #fff0b5;
   border-color: transparent;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -4091,7 +4091,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .file-label:hover .file-cta {
-  background-color: #eeeeee;
+  background-color: #fff0b5;
   color: #363636;
 }
 
