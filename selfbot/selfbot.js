@@ -81,7 +81,7 @@ function selfbotapp() {
     $("#connected").fadeIn();
     document.getElementById("username").innerHTML = client.user.tag;
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://noziro.herokuapp.com/new", true);
+    xhr.open("POST", "https://noziro.herokuapp.com/api/new", true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(
       JSON.stringify({
